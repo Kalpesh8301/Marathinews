@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathi News Live | स्वप्निल पोरे</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        /* Breaking News Ticker Animation */
+        .ticker-wrapper {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: ticker 25s linear infinite;
+        }
+        @keyframes ticker {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+
+        /* Pulse Animation for Live Button */
+        .pulse-red {
+            box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+            animation: pulse-red 2s infinite;
+        }
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #dc2626;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="text-gray-900 leading-relaxed">
+
+<header class="bg-white border-b-4 border-red-600 sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="logo.png" alt="Marathi News Live Logo" class="h-16 w-auto object-contain">
+            
+            <div class="flex flex-col">
+                <h1 class="text-xl md:text-3xl font-extrabold text-blue-900 leading-none">
+                    MARATHI <span class="text-red-600">NEWS</span> LIVE
+                </h1>
+                <span class="text-xs font-bold text-gray-500 tracking-widest uppercase">स्वप्निल पोरे | अधिकृत न्यूज पोर्टल</span>
+            </div>
+        </div>
+        
+        <a href="https://wa.me/919922580674" target="_blank"
+           class="bg-green-500 text-white px-4 py-2 rounded-full font-bold hover:bg-green-600 transition flex items-center gap-2 shadow-md text-sm md:text-base">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            <span class="hidden md:inline">संपर्क साधा</span>
+        </a>
+    </div>
+</header>
+
+<div class="bg-black text-white flex items-center h-12">
+    <div class="bg-red-600 px-6 h-full flex items-center font-black italic z-10 shadow-[5px_0_15px_rgba(0,0,0,0.5)]">
+        BREAKING
+    </div>
+    <div class="ticker-wrapper w-full">
+        <div class="ticker-text text-lg font-medium">
+             • महाराष्ट्रातील सर्वात वेगवान घडामोडी पाहण्यासाठी आताच सबस्क्राईब करा... • पुणे: स्वप्निल पोरे यांची विशेष बातमी... • ताज्या बातम्यांसाठी मराठी न्यूज लाईव्ह पाहत राहा... • इथे तुमची ब्रेकिंग बातमी अपडेट करा...
+        </div>
+    </div>
+</div>
+
+<main class="max-w-7xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <div class="lg:col-span-2 space-y-8">
+            
+            <div>
+                <span class="bg-red-100 text-red-700 px-3 py-1 rounded text-sm font-bold uppercase tracking-wide">ठळक बातमी</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-3 leading-tight text-gray-800">
+                    इथे तुमचं मुख्य बातमीचं सर्वात मोठं आणि आकर्षक शीर्षक लिहा
+                </h2>
+                <div class="flex items-center gap-4 mt-4 text-gray-500 text-sm">
+                    <p> फेब्रुवारी १२, २०२६</p>
+                    <p> स्वप्निल पोरे</p>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="relative overflow-hidden rounded-3xl shadow-2xl border-2 border-gray-200 bg-black group transition-all hover:shadow-red-200/50">
+                    
+                    <div class="absolute top-4 left-4 z-10 flex items-center gap-2">
+                        <div class="bg-red-600 text-white px-3 py-1.5 rounded-full flex items-center gap-2 font-bold text-xs md:text-sm shadow-lg pulse-red">
+                            <span class="flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-white opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                            </span>
+                            थेट प्रक्षेपण
+                        </div>
+                    </div>
+
+                    <div class="aspect-video">
+                        <iframe 
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/live_stream?channel=UC0hK0G1gEDvh1iH0mPcwdUg&autoplay=1&mute=1" 
+                            title="Marathi News Live Stream"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/60 to-transparent p-4">
+                        <p class="text-white font-bold text-base md:text-lg flex items-center gap-2">
+                            <span class="w-2 h-2 bg-red-600 rounded-full animate-pulse"></span>
+                            मराठी न्यूज लाईव्ह वरून थेट प्रक्षेपण सुरू आहे...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex flex-wrap justify-between items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-red-50 text-red-600 font-bold p-2 rounded-lg">99k+</div>
+                        <p class="text-gray-600 text-sm font-bold">प्रेक्षक आम्हाला पाहत आहेत</p>
+                    </div>
+                    
+                    <a href="https://www.youtube.com/channel/UC0hK0G1gEDvh1iH0mPcwdUg?sub_confirmation=1" 
+                       target="_blank"
+                       class="bg-red-600 hover:bg-red-700 text-white px-8 py-2.5 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-2 shadow-lg">
+                        सबस्क्राईब करा
+                    </a>
+                </div>
+            </div>
+
+            <article class="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-gray-200">
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <img src="https://images.unsplash.com/photo-1585829365234-781fcd50c3ef?auto=format&fit=crop&w=1200&q=80" alt="News Image" class="w-full h-96 object-cover mb-8 rounded-2xl shadow-lg">
+                    
+                    <p class="mb-6 text-xl font-bold text-gray-800 border-l-8 border-red-600 pl-4">
+                        पुणे: आजची सर्वात मोठी बातमी समोर येत आहे. मिळालेल्या प्राथमिक माहितीनुसार, [इथे बातमीचा पहिला परिच्छेद लिहा].
+                    </p>
+                    
+                    <p class="mb-6 text-lg">
+                        या घटनेचा सविस्तर आढावा घेतला असता असे दिसून येते की, [इथे बातमीचा दुसरा परिच्छेद लिहा]. स्वप्निल पोरे यांनी दिलेल्या माहितीनुसार, या विषयावर प्रशासनाने कडक पावले उचलली आहेत.
+                    </p>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-2xl mb-8">
+                        <h4 class="font-bold text-blue-900 mb-2">महत्वाचा मुद्दा:</h4>
+                        <p class="italic text-blue-800 font-medium italic">"आम्ही वाचक आणि प्रेक्षकांपर्यंत खरी आणि सत्य बातमी पोहोचवण्यासाठी कटिबद्ध आहोत. अधिक माहिती लवकरच अपडेट केली जाईल."</p>
+                    </div>
+
+                    <p class="text-lg">खालील व्हिडिओमध्ये तुम्ही या घटनेचे सविस्तर व्हिज्युअल्स पाहू शकता. आमच्या फेसबुक आणि ट्विटर पेजला देखील भेट द्या.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="lg:col-span-1 space-y-6">
+            
+            <div class="bg-gradient-to-br from-blue-900 to-blue-800 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-black mb-4 border-b border-blue-400/30 pb-2">संपादकीय</h3>
+                    <div class="space-y-4 font-medium">
+                        <div class="flex flex-col">
+                            <span class="text-blue-300 text-xs uppercase tracking-widest">संपादक</span>
+                            <span class="text-xl font-bold">स्वप्निल पोरे</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-blue-300 text-xs uppercase tracking-widest">मोबाईल</span>
+                            <span class="text-xl font-bold">9922580674</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute top-[-20px] right-[-20px] w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-200">
+                <h3 class="text-xl font-extrabold mb-6 flex items-center gap-2">
+                    <span class="w-2 h-6 bg-red-600 rounded-full"></span>
+                    ट्रेंडिंग बातम्या
+                </h3>
+                <div class="space-y-5">
+                    <div class="flex gap-4 group cursor-pointer border-b border-gray-100 pb-4">
+                        <span class="text-3xl font-black text-gray-200 group-hover:text-red-600 transition">01</span>
+                        <p class="font-bold text-gray-700 group-hover:text-blue-600 leading-snug transition">पुणे शहरात पावसाचा जोर वाढला, धरणांतून पाण्याचा विसर्ग सुरू...</p>
+                    </div>
+                    <div class="flex gap-4 group cursor-pointer border-b border-gray-100 pb-4">
+                        <span class="text-3xl font-black text-gray-200 group-hover:text-red-600 transition">02</span>
+                        <p class="font-bold text-gray-700 group-hover:text-blue-600 leading-snug transition">राजकीय वर्तुळात मोठी खळबळ; नवीन युतीची शक्यता?</p>
+                    </div>
+                    <div class="flex gap-4 group cursor-pointer">
+                        <span class="text-3xl font-black text-gray-200 group-hover:text-red-600 transition">03</span>
+                        <p class="font-bold text-gray-700 group-hover:text-blue-600 leading-snug transition">आजचे पेट्रोल-डिझेलचे दर जाहीर; पाहा तुमच्या शहरातील भाव...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-200 h-64 rounded-3xl flex items-center justify-center border-2 border-dashed border-gray-400">
+                <p class="text-gray-500 font-bold uppercase tracking-widest text-sm text-center px-4">जाहिरातीसाठी जागा रिकामी आहे<br><span class="text-xs">संपर्क: 9922580674</span></p>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-gray-800 pb-12">
+        <div>
+            <h4 class="text-3xl font-black mb-6 text-red-500">Marathi News Live</h4>
+            <p class="text-gray-400 text-lg leading-relaxed italic">"आपली बातमी, आपला आवाज - प्रत्येक क्षणाची अपडेट्स."</p>
+        </div>
+        <div>
+            <h4 class="text-xl font-bold mb-6 border-l-4 border-red-600 pl-3">जलद दुवे</h4>
+            <ul class="space-y-3 text-gray-400 font-medium">
+                <li><a href="#" class="hover:text-white transition">मुख्य पृष्ठ</a></li>
+                <li><a href="#" class="hover:text-white transition">आमच्याबद्दल</a></li>
+                <li><a href="#" class="hover:text-white transition">गोपनीयता धोरण</a></li>
+                <li><a href="#" class="hover:text-white transition">संपर्क साधा</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-xl font-bold mb-6 border-l-4 border-red-600 pl-3">संपर्क माहिती</h4>
+            <div class="space-y-2 text-gray-400">
+                <p> चळे, ता. पंढरपूर</p>
+                <p> +91 9922580674</p>
+                <p> news@marathinewslive.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-8 text-gray-500 text-sm font-medium">
+        © 2026 Marathi News Live | विकसित केले: स्वप्निल पोरे संपादकीय टीम
+    </div>
+</footer>
+
+</body>
+</html>
+
